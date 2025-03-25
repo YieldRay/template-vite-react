@@ -1,12 +1,10 @@
 import "./index.css";
-import { StrictMode, useCallback, lazy, Suspense } from "react";
+import { StrictMode, lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 
+const Lazy = lazy(() => import("@/App"));
+
 const App = () => {
-  const Lazy = useCallback(
-    lazy(() => import("@/App")),
-    [],
-  );
   return (
     <Suspense>
       <Lazy />

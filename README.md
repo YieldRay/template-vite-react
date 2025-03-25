@@ -10,7 +10,7 @@ try [react-router Framework Mode](https://reactrouter.com/start/framework/instal
 ## Getting Started
 
 ```bash
-npx degit user/repo myapp
+npx degit YieldRay/template-vite-react myapp
 
 cd myapp
 

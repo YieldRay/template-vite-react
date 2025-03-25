@@ -16,7 +16,7 @@
     "vite:preview": "vite preview"
   },
   "lint-staged": {
-    "*.{ts,tsx,js,cjs}": [
+    "*.{ts,tsx,js,mjs,cjs}": [
       "eslint --fix",
       "prettier --write"
     ],
@@ -24,36 +24,37 @@
     "package.json": "sort-package-json"
   },
   "dependencies": {
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.8.0",
-    "@commitlint/config-conventional": "19.8.0",
-    "@eslint-react/eslint-plugin": "1.34.1",
-    "@eslint/js": "9.22.0",
-    "@tailwindcss/vite": "4.0.14",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
+    "@eslint-react/eslint-plugin": "1.53.1",
+    "@eslint/js": "9.35.0",
+    "@tailwindcss/vite": "4.1.13",
     "@total-typescript/ts-reset": "0.6.1",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
-    "@types/node": "22.13.10",
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
-    "@vitejs/plugin-react": "4.3.4",
-    "eslint": "9.22.0",
+    "@types/node": "22.18.6",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "@vitejs/plugin-react": "5.0.3",
+    "code-inspector-plugin": "^1.2.10",
+    "eslint": "9.35.0",
     "husky": "9.1.7",
     "is-ci": "4.1.0",
-    "lightningcss": "1.29.3",
-    "lint-staged": "15.5.0",
-    "prettier": "3.5.3",
-    "prettier-plugin-packagejson": "2.5.10",
-    "prettier-plugin-tailwindcss": "0.6.11",
-    "sort-package-json": "3.0.0",
-    "tailwindcss": "4.0.14",
-    "turbo": "2.4.4",
-    "typescript": "5.8.2",
-    "typescript-eslint": "8.26.1",
-    "vite": "6.2.2",
+    "lightningcss": "1.30.1",
+    "lint-staged": "16.1.6",
+    "prettier": "3.6.2",
+    "prettier-plugin-packagejson": "2.5.19",
+    "prettier-plugin-tailwindcss": "0.6.14",
+    "sort-package-json": "3.4.0",
+    "tailwindcss": "4.1.13",
+    "turbo": "2.5.6",
+    "typescript": "5.9.2",
+    "typescript-eslint": "8.44.0",
+    "vite": "7.1.6",
     "vite-tsconfig-paths": "5.1.4"
   },
-  "packageManager": "pnpm@10.6.3"
+  "packageManager": "pnpm@10.17.0"
 }
