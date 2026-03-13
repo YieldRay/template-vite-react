@@ -2,7 +2,6 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { codeInspectorPlugin } from "code-inspector-plugin";
 import { defineConfig } from "vite";
-import tsPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [
@@ -10,15 +9,24 @@ export default defineConfig({
       bundler: "vite",
     }),
     react(),
-    tsPaths(),
     tailwindcss(),
   ],
+  resolve: {
+    tsconfigPaths: true,
+  },
   build: {
     cssMinify: "lightningcss",
     rollupOptions: {
       output: {
-        manualChunks: {
-          "react-vendor": ["react", "react-dom"],
+        codeSplitting: {
+          groups: [
+            {
+              name: "react-vendor",
+              test(id) {
+                new Set(["react", "react-dom"]).has(id);
+              },
+            },
+          ],
         },
       },
     },
